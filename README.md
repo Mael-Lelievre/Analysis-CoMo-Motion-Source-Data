@@ -1,1 +1,1 @@
-# Analysis-of-CoMo-motion-source-data
+# Analysis of CoMo Motion Source Data
