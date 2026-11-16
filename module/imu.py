@@ -3,7 +3,6 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.lines import Line2D
 
 
@@ -202,40 +201,6 @@ def select_time_window(
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #-------------- PLOT ZOOM POINTS TEMPOREL --------------
 def plot_pas_temporel_same_sensor(
         dataframe,
@@ -297,9 +262,6 @@ def plot_pas_temporel_same_sensor(
     plt.legend()
     plt.tight_layout()
     plt.show()
-
-
-
 
 
 
@@ -662,8 +624,7 @@ def interpolation_lineaire(df_lsm9ds1, df_comote, df_riot):
 
 
 #------------- CALCUL ERREUR -------------
-import numpy as np
-import pandas as pd
+
 
 
 def calcul_erreurs_inertielles(
@@ -1448,30 +1409,6 @@ def calcul_plot_correlations(
                     alpha=0.25
                 )
 
-                # Résultats placés dans le graphique
-               # texte_resultats = (
-               #      f"Coefficient de corrélation \n de Pearson r = {correlation:.3f}"
-               #      #f"R² = {r_carre:.3f}\n"
-               #      #f"a = {pente:.3f}\n"
-               #      #f"b = {origine:+.3f}\n"
-               #      #f"b = {origine:+.3f}\n"
-               #      #f"N = {len(x)}"
-               #  )
-               #
-               #  ax.text(
-               #      0.03,
-               #      0.97,
-               #      texte_resultats,
-               #      transform=ax.transAxes,
-               #      ha="left",
-               #      va="top",
-               #      fontsize=10,
-               #      bbox=dict(
-               #          facecolor="white",
-               #          edgecolor="gray",
-               #          alpha=0.85
-               #      )
-               #  )
 
         # --------------------------------------------------
         # Légende commune

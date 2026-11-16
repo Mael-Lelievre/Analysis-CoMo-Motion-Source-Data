@@ -5,7 +5,6 @@ import numpy as np
 import pandas as pd
 
 from pathlib import Path
-import seaborn as sns
 from matplotlib.ticker import MultipleLocator
 
 
@@ -192,28 +191,6 @@ def calcul_frequence_brute(
 
         print()
 
-        # print(
-        #     f"Période médiane : "
-        #     f"{np.median(period * 1000):.3f} ms"
-        # )
-        #
-        # print(
-        #     f"Fréquence médiane : "
-        #     f"{freq_median:.3f} Hz"
-        # )
-        #
-        # print()
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -315,23 +292,9 @@ def calcul_plot_jitter_intervalles(groupes_sources):
 
                 "Jitter maximal (ms)": jitter_ms.max(),
 
-                #"Jitter moyen signé (ms)":
-                 #   jitter_ms.mean(),
-
-                #"Écart-type du jitter (ms)":
-                 #   jitter_ms.std(),
-
-                #"Jitter médian (ms)":
-                 #   jitter_ms.median(),
-
-                #"Écart interquartile (ms)":
-                 #   q3 - q1,
-
-                #"P95 du jitter absolu (ms)":
-                 #   jitter_ms.abs().quantile(0.95),
-
-
             })
+
+
 
         # ---------------- Boxplot de l’intervalle ----------------
 
